@@ -14,6 +14,5 @@ public class PayrollCalculator {
         float payRate = salary.nextFloat();
 
         System.out.println("Employee Name: " + name + ", Pay Rate: " + payRate * hours);
-        System.out.printf("Employee Name: %s, Pay Rate: %2f" , name, payRate );
     }
 }
