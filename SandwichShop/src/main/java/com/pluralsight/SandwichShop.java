@@ -17,6 +17,19 @@ public class SandwichShop {
             System.out.println("Invalid size selection.");
             return;
         }
+
+        System.out.println("Would you like it loaded? (yes/no): ");
+        String loadedInput = scanner.next();
+        boolean isLoaded = loadedInput.equalsIgnoreCase("yes");
+
+        if (isLoaded) {
+            if (size == 1) {
+                basePrice += 1.00;
+            } else if (size == 2) {
+                basePrice += 1.75;
+            }
+        }
+
         System.out.println("Enter your age: ");
         int age = scanner.nextInt();
 
